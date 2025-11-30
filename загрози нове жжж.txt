@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Загрози та протидія</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Загрози та протидія</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Резюме</a></li>
+        <li><a href="ekonomichna_bezpeka.html">Економічна безпека</a></li>
+        <li><a class="active-page" href="zagrozy.html">Загрози та протидія</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+
+<h2>Основні загрози</h2>
+<ul class="threats-list">
+    <li>Війна та руйнування інфраструктури</li>
+    <li>Корупція</li>
+    <li>Висока інфляція</li>
+    <li>Трудова міграція</li>
+    <li>Енергетична залежність</li>
+</ul>
+
+<h2>Методи протидії загрозам</h2>
+<ul class="countermeasures-list">
+    <li>Диверсифікація енергопостачання</li>
+    <li>Антикорупційні реформи</li>
+    <li>Цифровізація державних послуг</li>
+    <li>Підтримка малого та середнього бізнесу</li>
+    <li>Зміцнення фінансової системи</li>
+</ul>
+
+</div>
+</body>
+</html>
+

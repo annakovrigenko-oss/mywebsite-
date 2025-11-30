@@ -1,0 +1,118 @@
+:root {
+    --primary-color: #E60000;
+    --secondary-color: #FFFFFF;
+    --text-color: #333333;
+    --link-hover-color: #A00000;
+
+    --table-header-bg: #E60000;
+    --table-header-text: #FFFFFF;
+    --border-color: #DDDDDD;
+
+    --focus-safe: #4CAF50;
+    --focus-warning: #FF9800;
+    --focus-critical: #F44336;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    width: 85%;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+    background: var(--secondary-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    background-color: #333333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 4px;
+}
+
+nav a:hover, .active-page {
+    background-color: var(--link-hover-color);
+}
+
+h2 {
+    color: var(--primary-color);
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.data-table th, .data-table td {
+    border: 1px solid var(--border-color);
+    padding: 10px 12px;
+}
+
+.data-table th {
+    background-color: var(--table-header-bg);
+    color: var(--table-header-text);
+}
+
+.threats-list li, .countermeasures-list li {
+    margin-bottom: 8px;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 1.1em;
+}
+
+.threats-list li {
+    background-color: #FFEEEE;
+    border-left: 5px solid var(--primary-color);
+}
+
+.countermeasures-list li {
+    background-color: #E9F8EA;
+    border-left: 5px solid var(--focus-safe);
+}
+
+.threats-list li::before {
+    content: "⚠️ ";
+}
+
+.countermeasures-list li::before {
+    content: "✅ ";
+}
